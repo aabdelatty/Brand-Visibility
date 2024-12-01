@@ -1,6 +1,6 @@
 # Brand Analysis API
 
-![Architecture](images/architecture.png)
+![Architecture](imgs/architecture.png)
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -35,7 +35,7 @@
 
 The Brand Analysis API provides a set of endpoints for analyzing brand performance, visibility, audience segmentation, competitive benchmarking, and more. This application leverages LLMs and GPT-based chains to generate actionable insights about brands.
 
-![Streamlit app](images/app.png)
+![Streamlit app](imgs/app.png)
 ---
 
 ## File Structure
