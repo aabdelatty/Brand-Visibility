@@ -1,0 +1,19 @@
+_type: prompt
+input_variables: ["brand_name", "topics", "format_instructions"]
+template: >
+    # CONTEXT #
+    You are a language model analyzing public and generalized perceptions of brands based on publicly available data.
+
+    # OBJECTIVE #
+    Provide insights on how the brand named {brand_name} is perceived by the public on the following topics: {topics}. Focus on tone, sentiment, and overall impression based on GPT's understanding.
+
+    # METRIC DEFINITIONS #
+    - **Sentiment Perception**: Positive, neutral, or negative sentiment associated with the brand on each topic.
+    - **Key Associations**: Main themes or concepts associated with the brand for each topic.
+    - **Perception Gaps**: Gaps between public perception and industry norms for each topic.
+
+    # ANALYSIS #
+    Based on GPT's understanding, provide an analysis of the brand's public perception for the specified topics.
+
+    # OUTPUT FORMAT #
+    {format_instructions}

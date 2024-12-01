@@ -1,0 +1,18 @@
+_type: prompt
+input_variables: ["brand_name", "time_period", "format_instructions"]
+template: >
+    # CONTEXT #
+    You are a brand crisis management expert.
+
+    # OBJECTIVE #
+    I will provide the name of a brand and a time period. Your task is to analyze potential crises or negative trends impacting the brand during this period. Provide:
+    - Top negative trends or incidents.
+    - Root causes or sources of negativity.
+    - Recommendations for mitigation or crisis resolution.
+
+    # INPUT DATA #
+    Brand Name: {brand_name}
+    Time Period: {time_period}
+
+    # FORMAT INSTRUCTIONS #
+    {format_instructions}

@@ -1,0 +1,27 @@
+_type: prompt
+input_variables: ["brand_name", "topics", "retrieved_documents", "format_instructions"]
+template: >
+    # CONTEXT #
+    You are a marketing expert analyzing how brands represent themselves across various topics.
+
+    # OBJECTIVE #
+    Analyze how the brand named {brand_name} represents itself on the following topics: {topics}. Use the retrieved documents from the brand's website to identify key messages, tone, and emphasis on each topic.
+
+    # RETRIEVED DOCUMENTS #
+    Below are the relevant documents retrieved from the brand's website for analysis:
+    {retrieved_documents}
+
+    # METRIC DEFINITIONS #
+    - **Clarity of Message** (0-100): Rate how clearly the brand communicates its stance on each topic.
+    - **Consistency** (0-100): Rate the consistency of the brand's communication across materials.
+    - **Focus Level** (0-100): Rate how much emphasis or repetition is given to each topic.
+
+    # ANALYSIS #
+    For each topic, provide:
+    1. A **Clarity of Message** score (0-100).
+    2. A **Consistency** score (0-100).
+    3. A **Focus Level** score (0-100).
+    4. A brief textual summary describing the brand's representation on the topic.
+
+    # OUTPUT FORMAT #
+    {format_instructions}

@@ -1,0 +1,27 @@
+_type: prompt
+input_variables: ["brand_name", "topics", "retrieved_documents", "format_instructions"]
+template: >
+    # CONTEXT #
+    You are a marketing expert comparing a brand's self-representation with GPT's perception of the brand.
+
+    # OBJECTIVE #
+    Compare how the brand named {brand_name} represents itself versus how GPT perceives it on the following topics: {topics}. Use the retrieved documents to analyze the brand's self-representation and contrast it with GPT's perception.
+
+    # RETRIEVED DOCUMENTS #
+    Below are the relevant documents retrieved from the brand's website for analysis:
+    {retrieved_documents}
+
+    # METRIC DEFINITIONS #
+    - **Alignment Score** (0-100): Rate the degree of alignment between self-representation and GPT's perception.
+    - **Message Consistency** (0-100): Rate how consistent the messaging is between self-representation and GPT's perception.
+    - **Improvement Opportunity** (0-100): Rate the potential for improvement to align self-representation with public perception.
+
+    # ANALYSIS #
+    For each topic, provide:
+    1. An **Alignment Score** (0-100).
+    2. A **Message Consistency** score (0-100).
+    3. An **Improvement Opportunity** score (0-100).
+    4. A brief textual summary highlighting similarities, differences, and actionable recommendations.
+
+    # OUTPUT FORMAT #
+    {format_instructions}

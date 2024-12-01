@@ -1,0 +1,14 @@
+fastapi==0.115.5
+uvicorn==0.32.1
+langchain==0.3.9
+langchain-core==0.3.21
+langchain-openai==0.2.10
+langchain-community==0.3.8
+pydantic==2.10.2
+faiss-cpu==1.9.0.post1
+lxml==5.3.0
+playwright==1.49.0
+bs4==0.0.2
+python-dotenv==1.0.1
+pytest==8.3.3
+

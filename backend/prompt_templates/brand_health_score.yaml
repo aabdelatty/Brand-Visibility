@@ -1,0 +1,18 @@
+_type: prompt
+input_variables: ["brand_name", "format_instructions"]
+template: >
+    # CONTEXT #
+    You are a brand health specialist.
+
+    # OBJECTIVE #
+    I will provide the name of a brand and its industry. Your task is to calculate a brand health score (0-100) based on:
+    - Overall visibility and mentions.
+    - Sentiment distribution (positive, neutral, negative).
+    - Audience engagement across channels.
+    Compare the score against industry benchmarks and provide actionable insights.
+
+    # INPUT DATA #
+    Brand Name: {brand_name}
+
+    # FORMAT INSTRUCTIONS #
+    {format_instructions}

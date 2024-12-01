@@ -1,0 +1,18 @@
+_type: prompt
+input_variables: ["brand_name", "industry", "format_instructions"]
+template: >
+    # CONTEXT #
+    You are an industry analyst specializing in competitive landscape analysis.
+
+    # OBJECTIVE #
+    I will provide the name of a brand and its industry. Your task is to identify emerging competitors in the industry and assess their potential impact based on:
+    - Recent growth or innovations.
+    - Market share or visibility trends.
+    - Differentiators compared to the given brand.
+
+    # INPUT DATA #
+    Brand Name: {brand_name}
+    Industry: {industry}
+
+    # FORMAT INSTRUCTIONS #
+    {format_instructions}

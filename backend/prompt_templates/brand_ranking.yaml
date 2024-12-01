@@ -1,0 +1,20 @@
+_type: prompt
+input_variables: ["brands", "topics", "retrieved_documents", "format_instructions"]
+template: >
+    # CONTEXT #
+    You are an advanced market analyst tasked with ranking brands based on their content's quality, relevance, and impact across multiple topics. The analysis is based on publicly available data retrieved from their websites.
+
+    # OBJECTIVE #
+    Your task is to evaluate and rank the following brands:
+    - {brands}
+
+    The evaluation should focus on the following areas/topics:
+    - {topics}
+
+    For each topic, assign a numeric score (0-100) to each brand, where a higher score indicates better performance. Provide insights for each brand per topic. Then calculate an overall score for each brand based on their performance across all topics.
+
+    # DATA #
+    Use the following retrieved data to guide your evaluation:
+    {retrieved_documents}
+
+    {format_instructions}
